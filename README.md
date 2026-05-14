@@ -1,8 +1,5 @@
-# fitting_reactnative
-
-This is an Expo React Native project.
-
-## Setup
-
+# لتثبيت المكتبات
 npm install
+
+# لتشغيل المشروع
 npx expo start
