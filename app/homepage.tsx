@@ -19,6 +19,16 @@ export default function HomePage() {
 
       <Button
         size="lg"
+        className="bg-[#FFD166] rounded-full px-10 mb-4"
+        onPress={() => router.push("/training")}
+      >
+        <ButtonText className="text-[#3d5236] text-base font-bold">
+          training page
+        </ButtonText>
+      </Button>
+
+      <Button
+        size="lg"
         className="bg-[#3d5236] rounded-full px-10"
         onPress={() => router.replace("/(auth)/login")}
       >

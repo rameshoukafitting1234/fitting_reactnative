@@ -4,10 +4,9 @@ import { StatusBar } from "expo-status-bar";
 import "react-native-reanimated";
 
 import { useColorScheme } from "@/hooks/use-color-scheme";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { QueryClientProvider } from "@tanstack/react-query";
 import { GluestackUIProvider } from "@/components/ui/gluestack-ui-provider";
-
-const queryClient = new QueryClient();
+import { queryClient } from "@/lib/query-client";
 
 export const unstable_settings = {
   initialRouteName: "splash",
@@ -24,6 +23,7 @@ export default function RootLayout() {
           <Stack.Screen name="splash" options={{ headerShown: false }} />
           <Stack.Screen name="index" options={{ headerShown: false }} />
           <Stack.Screen name="homepage" options={{ headerShown: false }} />
+          <Stack.Screen name="training" options={{ headerShown: false }} />
           <Stack.Screen name="(auth)" options={{ headerShown: false }} />
         </Stack>
 

@@ -41,3 +41,6 @@ app-example
 # generated native folders
 /ios
 /android
+
+# machine-specific (keep android/ in repo if you commit prebuild output)
+android/local.properties
